@@ -6,7 +6,6 @@
 *	Dept. of Geoscience and Remote Sensing
 *	TU Delft, https://tudelft.nl
 *
-*
 *	This is free software; you can redistribute it and/or modify
 *	it under the terms of the GNU General Public License Version 3
 *	as published by the Free Software Foundation.
