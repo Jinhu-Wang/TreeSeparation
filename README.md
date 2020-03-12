@@ -48,7 +48,8 @@ This implementation uses **nanoflann** for _knn_ searching, originated from here
 ## Support or Contact
 
 Should you have any questions, comments, or suggestions, please contact:
-jinhu.wang@tudelft.nl or r.c.lindenbergh@tudelft.nl. 
+
+jinhu.wang@tudelft.nl || r.c.lindenbergh@tudelft.nl. 
 
 **Jinhu Wang**
 
