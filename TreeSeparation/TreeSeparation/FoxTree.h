@@ -4,7 +4,7 @@
 *       Roderik Lindenbergh (r.c.lindenbergh@tudelft.nl) [http://doris.tudelft.nl/~rlindenbergh/]
 *       Laser and Optical Remote Sensing
 *	Dept. of Geoscience and Remote Sensing
-*	TU Delft, https://3d.bk.tudelft.nl
+*	TU Delft, https://tudelft.nl
 *
 *
 *	This is free software; you can redistribute it and/or modify
