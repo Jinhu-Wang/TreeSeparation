@@ -10,6 +10,7 @@ This module implements a water shed method for individual tree deleation from 3D
  ```
           x            y         z         r      g       b 
       623772.9200 4834465.5900 77.7409     0     215     39
+         ...         ...        ...       ...    ...     ...
 ```
 Note that if the original data does not have color information, either initiate the last three columns with arbitray integers or modify the code on data loading. 
 
@@ -32,7 +33,8 @@ As demonstrated by the **code snippet** below:
 The output of this implementation is an ASCII format **_*.xyz_** file as well:
 ```
 	treeID        x            y         z         r      g     b 
-	  89     623942.8999 4833932.5500   77.8399   36     76    89
+	  89     623942.8999 4833932.5500   77.8399   36      76    89
+	  ...         ...        ...         ...      ...    ...    ...
 ```
 Notably, the first column is the **index of tree** of which this point is assigned. The last three columns are randomly designated color for the points of a same tree.
 
