@@ -1,6 +1,6 @@
 # Point-based Individual Tree Delineation from 3D LiDAR Point Cloud Data.
 
-This module implements a water shed method for individual tree deleation from 3D point cloud data using pure C/C++.
+This module implements a lightweight and easy-to-use **water-shed** method for individual tree delineation from 3D point cloud data using pure C/C++.
 
 ## Inupt
  The input of this module is tree points only, as illustrated be the figure below.
