@@ -45,7 +45,7 @@ The individual tree delineation results is given as the figure below:
 ## Declarations
 This implementation uses **nanoflann** for _knn_ searching, originated from here [link](https://github.com/jlblancoc/nanoflann). 
 
-## Support or Contact
+## Support & Contact
 
 Should you have any questions, comments, or suggestions, please contact:
 
