@@ -29,8 +29,11 @@ As demonstrated by the **code snippet** below:
 	const double verticalResolution = 1.0;  //Vertical resolution
 	const int miniPtsPerCluster = 5; // Minimum number of points per cluster
 ```
+
 **Hints on Parameter Settings:**
+
 _Radius_ should be in accordance with the average point density, i.e. to ensure there are a certain number of points within the radius.
+
 _VerticalResolution_ depends on the overall point density, fineness of results.
 
 ## Output
