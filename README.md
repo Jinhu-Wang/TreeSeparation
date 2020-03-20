@@ -26,7 +26,7 @@ As demonstrated by the **code snippet** below:
 ```markdown
 	//Parameter settings
 	const double Radius = 1.5;  //Searching Radius
-	const double verticalResolution = 1.0;  //Vertical resolution
+	const double verticalResolution = 1.0;  //Vertical resolution of the layers
 	const int miniPtsPerCluster = 5; // Minimum number of points per cluster
 ```
 
