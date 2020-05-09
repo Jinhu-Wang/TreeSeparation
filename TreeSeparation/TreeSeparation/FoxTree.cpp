@@ -178,7 +178,14 @@ void FoxTree::topDownSeparation(double radius, double verticalResolution)
 			currLayerClusters = this->clusterPoints(radius, ptIDs);
 			this->generateTreeClusters(currLayerClusters);
 			this->ConcatenateToParsedPts(currLayerClusters);
-			isTopLayer = false;
+			if(currLayerCluster.size() == 0)
+			{
+				isTopLayer = true;
+			}
+			else
+			{
+				isTopLayer = false;
+			}
 		}
 		else
 		{
@@ -233,7 +240,14 @@ void FoxTree::bottomUpSeparation(double radius, double verticalResolution)
 			currLayerCluster = this->clusterPoints(radius, ptIDs);
 			this->generateTreeClusters(currLayerCluster);
 			this->ConcatenateToParsedPts(currLayerCluster);
-			isBottomLayer = false;
+			if(currLayerCluster.size() == 0)
+			{
+				isBottomLayer = true;
+			}
+			else
+			{
+				isBottomLayer = false;
+			}
 		}
 		else
 		{
