@@ -67,7 +67,7 @@ jinhu.wang@hotmail.com  or  r.c.lindenbergh@tudelft.nl.
 
 **Jinhu Wang**
 
-https://rs.tudelft.nl/~jinhuwang/
+https://doris.tudelft.nl/~jinhuwang/
 
 **Roderik Lindenbergh**
 
