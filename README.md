@@ -8,9 +8,9 @@ This module implements a lightweight and easy-to-use **water-shed** method for i
 
 ![test-02](test-02.PNG)
 
-![Inputs of this implementation](test-03.PNG)
+![Another test data](test-03.PNG)
 
-![Inputs of this implementation](test-04.PNG)
+![One more test data](test-04.PNG)
  
  The format of the tree points is **_*.xyz_**, such as:
  ```
