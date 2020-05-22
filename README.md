@@ -53,10 +53,10 @@ Notably, the first column is the **index of tree** of which this point is assign
 
 The individual tree delineation results is given as the figure below:
 ![Individual tree delineation results](Results.PNG)
-![Individual tree delineation results](test-02-results-1.0-0.7-3.PNG)
-![Individual tree delineation results](test-02-results-1.0-0.7-3_01.PNG)
-![Individual tree delineation results](test-03-results-1.0-0.5-3.PNG)
-![Individual tree delineation results](test-04-results-1.0-0.8-5.PNG)
+![Individual tree delineation results](test-02-results-1.0-0.7-3.png)
+![Individual tree delineation results](test-02-results-1.0-0.7-3_01.png)
+![Individual tree delineation results](test-03-results-1.0-0.5-3.png)
+![Individual tree delineation results](test-04-results-1.0-0.8-5.png)
 
 ## Declarations
 In this implementation,  **nanoflann** is employed for **_KNN_** searching, which can be found from here [link](https://github.com/jlblancoc/nanoflann). 
