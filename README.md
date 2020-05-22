@@ -5,6 +5,9 @@ This module implements a lightweight and easy-to-use **water-shed** method for i
 ## Inupt
  The input of this module is tree points only, as illustrated be the figure below.
 ![Inputs of this implementation](OriginalTreePoints.PNG)
+![Inputs of this implementation](test-02.PNG)
+![Inputs of this implementation](test-03.PNG)
+![Inputs of this implementation](test-04.PNG)
  
  The format of the tree points is **_*.xyz_**, such as:
  ```
@@ -47,7 +50,10 @@ Notably, the first column is the **index of tree** of which this point is assign
 
 The individual tree delineation results is given as the figure below:
 ![Individual tree delineation results](Results.PNG)
-
+![Individual tree delineation results](test-02-results-1.0-0.7-3.PNG)
+![Individual tree delineation results](test-02-results-1.0-0.7-3_01.PNG)
+![Individual tree delineation results](test-03-results-1.0-0.5-3.PNG)
+![Individual tree delineation results](test-04-results-1.0-0.8-5.PNG)
 
 ## Declarations
 In this implementation,  **nanoflann** is employed for **_KNN_** searching, which can be found from here [link](https://github.com/jlblancoc/nanoflann). 
