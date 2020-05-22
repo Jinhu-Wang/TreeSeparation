@@ -6,7 +6,7 @@ This module implements a lightweight and easy-to-use **water-shed** method for i
  The input of this module is tree points only, as illustrated be the figure below.
 ![Inputs of this implementation](OriginalTreePoints.PNG)
 
-![Inputs of this implementation](test-02.PNG)
+![test-02](test-02.PNG)
 
 ![Inputs of this implementation](test-03.PNG)
 
