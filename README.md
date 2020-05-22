@@ -65,11 +65,15 @@ In this implementation,  **nanoflann** is employed for **_KNN_** searching, whic
 
 Should you have any questions, comments, or suggestions, please contact:
 
-jinhu.wang@tudelft.nl  or  r.c.lindenbergh@tudelft.nl. 
+jinhu.wang@hotmail.com  or  r.c.lindenbergh@tudelft.nl. 
 
 **Jinhu Wang**
 
 https://rs.tudelft.nl/~jinhuwang/
+
+**Roderik Lindenbergh**
+
+http://doris.tudelft.nl/~rlindenbergh/
 
 Dec. 9, 2016
 
