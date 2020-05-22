@@ -6,11 +6,11 @@ This module implements a lightweight and easy-to-use **water-shed** method for i
  The input of this module is tree points only, as illustrated be the figure below.
 ![Inputs of this implementation](OriginalTreePoints.PNG)
 
-![test-02](test-02.PNG)
+![test-02](test-02.png)
 
-![Another test data](test-03.PNG)
+![Another test data](test-03.png)
 
-![One more test data](test-04.PNG)
+![One more test data](test-04.png)
  
  The format of the tree points is **_*.xyz_**, such as:
  ```
