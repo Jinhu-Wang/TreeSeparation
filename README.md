@@ -13,9 +13,9 @@ This module implements a lightweight and easy-to-use **water-shed** method for i
  
  The format of the tree points is **_*.xyz_**, such as:
  ```
-          x            y         z         r      g       b 
-      623772.9200 4834465.5900 77.7409     0     215     39
-         ...         ...        ...       ...    ...     ...
+          x            y         z          
+      623772.9200 4834465.5900 77.7409     
+         ...         ...        ...       
 ```
 Note that if the original data does not have color information, either initiate the last three columns with arbitray integers or modify the code on data loading. 
 
