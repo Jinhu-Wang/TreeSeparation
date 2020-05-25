@@ -61,7 +61,7 @@ In this implementation,  **nanoflann** is employed for **_KNN_** searching, whic
 
 ## Support & Contact
 
-Should you have any questions, comments, suggestions, BUGs, or IDEAS for futher improvements, please contact:
+Should you have any questions, comments, BUG(s) reporting, or IDEAS for futher improvements? Please contact:
 
 jinhu.wang@hotmail.com  or  r.c.lindenbergh@tudelft.nl. 
 
