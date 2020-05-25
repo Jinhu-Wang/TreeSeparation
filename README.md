@@ -3,7 +3,7 @@
 This module implements a lightweight and easy-to-use **water-shed** method for individual tree delineation from 3D point cloud data using pure C/C++.
 
 ## Inupt
- The input of this module are **TREE Points** only, as illustrated be the figures below.
+ The input of this module are **TREE Points** only, as illustrated by the figures below.
 
 ![test-02](test-02.png)
 
