@@ -66,15 +66,24 @@ In this implementation,  **nanoflann** is employed for **_KNN_** searching, whic
 Should you have any questions, comments, BUG(s) reporting, or IDEAS for futher improvements? Please contact:
 
 **Jinhu Wang**
+
+
 jinhu.wang@hotmail.com  
+
+
 
 https://doris.tudelft.nl/~jinhuwang/
 
- or 
+
+or 
  
  
 **Roderik Lindenbergh**
+
+
 r.c.lindenbergh@tudelft.nl. 
+
+
 http://doris.tudelft.nl/~rlindenbergh/
 
 Dec. 9, 2016
