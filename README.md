@@ -5,7 +5,7 @@ This module implements a lightweight and easy-to-use **water-shed** method for i
 ## Inupt
  The input of this module are **TREE Points** only, as illustrated by the figures below.
 
-![test-02](test-02.png)
+![test-02](TestDatasets/test-02.png)
 
 ![Another test data](test-03.png)
 
