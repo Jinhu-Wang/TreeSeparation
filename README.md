@@ -1,6 +1,6 @@
 # Point-based Individual Tree Delineation from 3D LiDAR Point Cloud Data.
 
-This module implements a lightweight and easy-to-use **Point-based** method for individual tree delineation from 3D point cloud data using pure C/C++.
+This module implements a lightweight and easy-to-use **_Point-based_** method for individual tree delineation from 3D point cloud data using pure C/C++.
 
 The source codes files are included in folder **[TreeSeparation]**, which consists of a project generated from _Visual Studio 2015_. The **CLASS** for tree separation is named "FoxTree" and can be found in the respect **_FoxTree.h_** and **_FoxTree.cpp_** files. 
 
