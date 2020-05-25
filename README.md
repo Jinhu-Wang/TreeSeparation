@@ -2,20 +2,22 @@
 
 This module implements a lightweight and easy-to-use **water-shed** method for individual tree delineation from 3D point cloud data using pure C/C++.
 
+The source codes are included in folder **[TreeSeparation]**, which are a project generated from _Visual Studio 2015_. The **CLASS** for tree separation is named "FoxTree", can be found in the respect **_FoxTree.h_** and **_FoxTree.cpp_** files. 
+
 ## Inupt
  The input of this module are **TREE Points** only, as illustrated by the figures below.
 
-![test-02](test-02.png)
+![test-02](TestDatasets/test-02.png)
 
-![Another test data](test-03.png)
+![Another test data](TestDatasets/test-03.png)
 
-![One more test data](test-04.png)
+![One more test data](TestDatasets/test-04.png)
  
  The format of the tree points is **_*.xyz_**, such as:
  ```
-          x            y         z         r      g       b 
-      623772.9200 4834465.5900 77.7409     0     215     39
-         ...         ...        ...       ...    ...     ...
+          x            y         z          
+      623772.9200 4834465.5900 77.7409     
+         ...         ...        ...       
 ```
 Note that if the original data does not have color information, either initiate the last three columns with arbitray integers or modify the code on data loading. 
 
@@ -51,25 +53,35 @@ The output of this implementation is an ASCII format **_*.xyz_** file as well:
 Notably, the first column is the **index of tree** of which this point is assigned. The last three columns are randomly designated color for the points of a same tree.
 
 The individual tree delineation results are given as the figure below:
-![Individual tree delineation results](test-02-results-1.0-0.7-3.png)
-![Individual tree delineation results](test-02-results-1.0-0.7-3_01.png)
-![Individual tree delineation results](test-03-results-1.0-0.5-3.png)
-![Individual tree delineation results](test-04-results-1.0-0.8-5.png)
+![Individual tree delineation results](Results/test-02-results-1.0-0.7-3.png)
+![Individual tree delineation results](Results/test-02-results-1.0-0.7-3_01.png)
+![Individual tree delineation results](Results/test-03-results-1.0-0.5-3.png)
+![Individual tree delineation results](Results/test-04-results-1.0-0.8-5.png)
 
 ## Declarations
 In this implementation,  **nanoflann** is employed for **_KNN_** searching, which can be found from here [link](https://github.com/jlblancoc/nanoflann). 
 
 ## Support & Contact
 
-Should you have any questions, comments, suggestions or BUGs, please contact:
-
-jinhu.wang@hotmail.com  or  r.c.lindenbergh@tudelft.nl. 
+Should you have any questions, comments, BUG(s) reporting, or IDEAS for futher improvements? Please contact:
 
 **Jinhu Wang**
 
-https://doris.tudelft.nl/~jinhuwang/
 
+jinhu.wang@hotmail.com  
+
+
+
+
+
+or 
+ 
+ 
 **Roderik Lindenbergh**
+
+
+r.c.lindenbergh@tudelft.nl. 
+
 
 http://doris.tudelft.nl/~rlindenbergh/
 
