@@ -3,7 +3,7 @@
 This module implements a lightweight and easy-to-use **water-shed** method for individual tree delineation from 3D point cloud data using pure C/C++.
 
 ## Inupt
- The input of this module are **TREE Points** only, as illustrated be the figure below.
+ The input of this module are **TREE Points** only, as illustrated be the figures below.
 
 ![test-02](test-02.png)
 
@@ -50,7 +50,7 @@ The output of this implementation is an ASCII format **_*.xyz_** file as well:
 ```
 Notably, the first column is the **index of tree** of which this point is assigned. The last three columns are randomly designated color for the points of a same tree.
 
-The individual tree delineation results is given as the figure below:
+The individual tree delineation results are given as the figure below:
 ![Individual tree delineation results](test-02-results-1.0-0.7-3.png)
 ![Individual tree delineation results](test-02-results-1.0-0.7-3_01.png)
 ![Individual tree delineation results](test-03-results-1.0-0.5-3.png)
