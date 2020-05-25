@@ -30,16 +30,14 @@ void main()
 	std::vector<Point3D> points;
 	Point3D tempPt;
 
-	//FILE* inFile = fopen("test.xyz", "r");
-	FILE* inFile = fopen("output_tree.xyz", "r");
-
+	//Reading points from ASCII formated file;
+	FILE* inFile = fopen("test-02.xyz", "r");
 	if (inFile)
 	{
-		int r, g, b;
 		while (!feof(inFile))
 		{
-			fscanf(inFile, "%lf %lf %lf %d %d %d\n",
-				&tempPt.x, &tempPt.y, &tempPt.z, &r, &g, &b);
+			fscanf(inFile, "%lf %lf %lf\n",
+				&tempPt.x, &tempPt.y, &tempPt.z);
 			points.push_back(tempPt);
 		}
 		fclose(inFile);
@@ -50,19 +48,20 @@ void main()
 		return; 
 	} 
 
-	//
+	
 	//Parameters
-	const double Radius = 3.5; 
-	const double verticalResolution = 1.0; 
+	const double Radius = 1.0; 
+	const double verticalResolution = 0.7; 
 	const int miniPtsPerCluster = 3;
+
 	//Initialization
 	FoxTree* foxTree = new FoxTree(points, Radius, verticalResolution, miniPtsPerCluster);
 
-	//Topdown
+	//Topdown direction
 	foxTree->separateTrees(1, 1);
-	//Output
-	foxTree->outputTrees("test-1.5-1.0-5.xyz", foxTree->m_nTrees); 
+	//Output separation results
+	foxTree->outputTrees("test-02-1.0-0.7-3.xyz", foxTree->m_nTrees); 
 	std::cout << "Finished" << std::endl;
 
-	if (foxTree) delete foxTree; foxTree = NULL;
+	if (foxTree) delete foxTree; foxTree = nullptr;
 }
