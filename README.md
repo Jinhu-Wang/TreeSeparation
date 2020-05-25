@@ -7,9 +7,9 @@ This module implements a lightweight and easy-to-use **water-shed** method for i
 
 ![test-02](TestDatasets/test-02.png)
 
-![Another test data](test-03.png)
+![Another test data](TestDatasets/test-03.png)
 
-![One more test data](test-04.png)
+![One more test data](TestDatasets/test-04.png)
  
  The format of the tree points is **_*.xyz_**, such as:
  ```
@@ -51,7 +51,7 @@ The output of this implementation is an ASCII format **_*.xyz_** file as well:
 Notably, the first column is the **index of tree** of which this point is assigned. The last three columns are randomly designated color for the points of a same tree.
 
 The individual tree delineation results are given as the figure below:
-![Individual tree delineation results](test-02-results-1.0-0.7-3.png)
+![Individual tree delineation results](Results/test-02-results-1.0-0.7-3.png)
 ![Individual tree delineation results](test-02-results-1.0-0.7-3_01.png)
 ![Individual tree delineation results](test-03-results-1.0-0.5-3.png)
 ![Individual tree delineation results](test-04-results-1.0-0.8-5.png)
