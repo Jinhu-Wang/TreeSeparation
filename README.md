@@ -28,13 +28,13 @@ There are three parameters have to be initialized for optimal individualization 
      -2 Vertical resolution
      -3 Minimum number of points per cluster
 
-As demonstrated by the **code snippet** below:
+As demonstrated by the **code snippet** below (Note that the parameters are based on geo-referenced point cloud data.):
 
 ```markdown
 	//Parameter settings
-	const double Radius = 1.5;  //Searching Radius
-	const double verticalResolution = 1.0;  //Vertical resolution of the layers
-	const int miniPtsPerCluster = 5; // Minimum number of points per cluster
+	const double Radius = 1.5;  //Searching Radius, 1.5 meter;
+	const double verticalResolution = 1.0;  //Vertical resolution of the layers, 1.0 meter;
+	const int miniPtsPerCluster = 5; // Minimum number of points per cluster, 5 points;
 ```
 
 **Hints on Parameter Settings:**
