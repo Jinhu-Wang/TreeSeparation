@@ -52,7 +52,7 @@ The output of this implementation is an ASCII format **_*.xyz_** file as well:
 ```
 Notably, the first column is the **index of tree** of which this point is assigned. The last three columns are randomly designated color for the points of a same tree.
 
-The individual tree delineation results are given as the figure below:
+The individual tree delineation results are given as the figures below:
 ![Individual tree delineation results](Results/test-02-results-1.0-0.7-3.png)
 ![Individual tree delineation results](Results/test-02-results-1.0-0.7-3_01.png)
 ![Individual tree delineation results](Results/test-03-results-1.0-0.5-3.png)
@@ -63,7 +63,7 @@ In this implementation,  **nanoflann** is employed for **_KNN_** searching, whic
 
 ## Support & Contact
 
-Should you have any questions, comments, BUG(s) reporting, or IDEAS for futher improvements? Please contact:
+Should you have any questions, comments, BUG(s) reporting, or IDEAS for further improvements? Please contact:
 
 **Jinhu Wang**
 
