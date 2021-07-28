@@ -31,7 +31,7 @@ There are three parameters have to be initialized for optimal individualization 
 As demonstrated by the **code snippet** below (Note that the parameters are based on geo-referenced point cloud data.):
 
 
-``` {r, attr.source='.numberLines'}
+``` javascript {r, attr.source='.numberLines'}
 	//Parameter settings
 	const double Radius = 1.5;  //Searching Radius, 1.5 meter;
 	const double verticalResolution = 1.0;  //Vertical resolution of the layers, 1.0 meter;
