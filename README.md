@@ -33,7 +33,7 @@ As demonstrated by the **code snippet** below (Note that the parameters are base
 
 ``` javascript class:"lineNos"
 	//Parameter settings
-	const double Radius = 1.5;  //Searching Radius, 1.5 meter;
+	const double radius = 1.5;  //Searching Radius, 1.5 meter;
 	const double verticalResolution = 1.0;  //Vertical resolution of the layers, 1.0 meter;
 	const int miniPtsPerCluster = 5; // Minimum number of points per cluster, 5 points;
 ```
