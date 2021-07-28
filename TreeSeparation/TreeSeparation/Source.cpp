@@ -50,12 +50,12 @@ void main()
 
 	
 	//Parameters
-	const double Radius = 1.0; 
+	const double radius = 1.0; 
 	const double verticalResolution = 0.7; 
 	const int miniPtsPerCluster = 3;
 
 	//Initialization
-	FoxTree* foxTree = new FoxTree(points, Radius, verticalResolution, miniPtsPerCluster);
+	FoxTree* foxTree = new FoxTree(points, radius, verticalResolution, miniPtsPerCluster);
 
 	//Topdown direction
 	foxTree->separateTrees(1, 1);
