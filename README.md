@@ -31,7 +31,7 @@ There are three parameters have to be initialized for optimal individualization 
 As demonstrated by the **code snippet** below (Note that the parameters are based on geo-referenced point cloud data.):
 
 
-``` javascript class:"lineNos"
+``` javascript {.line-numbers}
 	//Parameter settings
 	const double radius = 1.5;  //Searching Radius, 1.5 meter;
 	const double verticalResolution = 1.0;  //Vertical resolution of the layers, 1.0 meter;
