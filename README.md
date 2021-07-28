@@ -14,7 +14,7 @@ The source codes files are included in folder **[TreeSeparation]**, which consis
 ![One more test data](TestDatasets/test-04.png)
  
  The format of the tree points is **_*.xyz_**, such as:
- ```
+ ``` javascript {.line-numbers}
           x            y         z          
       623772.9200 4834465.5900 77.7409     
          ...         ...        ...       
@@ -46,7 +46,7 @@ As demonstrated by the **code snippet** below (Note that the parameters are base
 
 ## Output
 The output of this implementation is an ASCII format **_*.xyz_** file as well:
-```
+```javascript {.line-numbers}
 	treeID        x            y         z         r      g     b 
 	  89     623942.8999 4833932.5500   77.8399   36      76    89
 	  ...         ...        ...         ...      ...    ...    ...
