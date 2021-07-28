@@ -68,7 +68,7 @@ Should you have any questions, comments, BUG(s) reporting, or IDEAS for further 
 **Jinhu Wang**
 
 
-jinhu.wang@hotmail.com  
+jinhu(dot)wang(at)hotmail.com  
 
 
 
@@ -80,7 +80,7 @@ or
 **Roderik Lindenbergh**
 
 
-r.c.lindenbergh@tudelft.nl. 
+r(dot)c(dot)lindenbergh(at)tudelft.nl. 
 
 
 http://doris.tudelft.nl/~rlindenbergh/
