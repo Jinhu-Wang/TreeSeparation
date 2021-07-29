@@ -94,5 +94,5 @@ http://doris.tudelft.nl/~rlindenbergh/
 
 Dec. 9, 2016
 
-Copyright &c (C) 2016
+Copyright (C) 2016
 
