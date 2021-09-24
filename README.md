@@ -75,7 +75,7 @@ Should you have any questions, comments, BUG(s) reporting, or IDEAS for further 
 **Jinhu Wang**
 
 
-jinhu (dot) wang (at) hotmail.com  
+jinhu (dot) wang (at) hotmail (dot) com  
 
 
 
@@ -87,7 +87,7 @@ or
 **Roderik Lindenbergh**
 
 
-r (dot) c (dot) lindenbergh (at) tudelft.nl. 
+r (dot) c (dot) lindenbergh (at) tudelft (dot) nl. 
 
 
 http://doris.tudelft.nl/~rlindenbergh/
