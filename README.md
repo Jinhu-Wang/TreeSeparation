@@ -34,8 +34,8 @@ As demonstrated by the **code snippet** below (Note that the parameters are base
 ``` javascript {.line-numbers}
 	//Parameter settings
 	
-	const double radius = 1.5;  
-	//Searching Radius, 1.5 meter;
+	const double radius = 1.0;  
+	//Searching Radius, 1.0 meter;
 	
 	const double verticalResolution = 1.0;  
 	//Vertical resolution of the layers, 1.0 meter;
