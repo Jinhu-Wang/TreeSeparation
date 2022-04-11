@@ -5,7 +5,7 @@ This module implements a lightweight and easy-to-use **_Point-based_** method fo
 The source codes files are included in folder **[TreeSeparation]**, which consists of a project generated from _Visual Studio 2015_. The **CLASS** for tree separation is named "FoxTree" and can be found in the respect **_FoxTree.h_** and **_FoxTree.cpp_** files. 
 
 ## Inupt
- The input of this module are **TREE Points** only, as illustrated by the figures below.
+ The input of this module is **TREE Points** only, as illustrated by the figures below.
 
 ![test-02](TestDatasets/test-02.png)
 
@@ -19,14 +19,14 @@ The source codes files are included in folder **[TreeSeparation]**, which consis
       623772.9200 4834465.5900 77.7409     
          ...         ...        ...       
 ```
-Note that if the original data does not have color information, either initiate the last three columns with arbitray integers or modify the code on data loading. 
+Note that if the original data does not have color information, either initiate the last three columns with arbitrary integers or modify the code on data loading. 
 
 
 ## Parameters
 There are three parameters have to be initialized for optimal individualization results:
-     - 1 Searching radius;
-     - 2 Vertical resolution;
-     - 3 Minimum number of points per cluster;
+     * 1 Searching radius;
+     * 2 Vertical resolution;
+     * 3 Minimum number of points per cluster;
 
 As demonstrated by the **code snippet** below (Note that the parameters are based on geo-referenced point cloud data.):
 
@@ -48,7 +48,7 @@ As demonstrated by the **code snippet** below (Note that the parameters are base
 
 **_Radius_** should be in accordance with the average point density, i.e. to ensure there are a certain number of points within the radius.
 
-**_VerticalResolution_** depends on the overall point density, fineness of results.
+**_VerticalResolution_** depends on the overall point density and fineness of results.
 
 ## Output
 The output of this implementation is an ASCII format **_*.xyz_** file as well:
