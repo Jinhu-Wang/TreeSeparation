@@ -24,11 +24,13 @@ Note that if the original data does not have color information, either initiate 
 
 ## Parameters
 There are three parameters have to be initialized for optimal individualization results:
+
      ```
      * 1 Searching radius;
      * 2 Vertical resolution;
      * 3 Minimum number of points per cluster;
      ```
+
 As demonstrated by the **code snippet** below (Note that the parameters are based on geo-referenced point cloud data.):
 
 
