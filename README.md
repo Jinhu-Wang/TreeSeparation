@@ -81,7 +81,6 @@ Should you have any questions, comments, BUG(s) reporting, or IDEAS for further 
 jinhu.wang (at) hotmail.com  
 
 
-'text
 
 
 or 
