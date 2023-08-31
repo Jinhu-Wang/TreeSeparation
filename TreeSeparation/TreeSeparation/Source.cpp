@@ -22,45 +22,83 @@
 
 #include<iostream>
 
+//#include"../LasLib/include/las/lasreader.hpp"
+#include <lasreader.hpp>
+
 #include"FoxTree.h"
 
 
 void main()
 {
+	const char *filePath = "../TestData/TsingHuaData/440882004002000103501-off-ground-1.las";
+
+	// 读取las文件
+	LASreadOpener lasReadOpener;
+	lasReadOpener.set_file_name(filePath);
+
+	LASreader *lasReader = lasReadOpener.open();
+	if (!lasReader) {
+		std::cout << "Can not open LAS file, Please check the file path." << std::endl;
+		return;
+	}
+
+	// Get las information
+	LASheader lasHeader = lasReader->header;
+	unsigned int pointNum = lasHeader.number_of_point_records;
+
+	std::cout << "LAS format: " << lasHeader.version_major << "." << lasHeader.version_minor << std::endl;
+	std::cout << "The number of point: " << lasHeader.number_of_point_records << std::endl;
+	std::cout << "The area of point cloud: " << lasHeader.min_x << ", " << lasHeader.min_y << " to " << lasHeader.max_x << ", " << lasHeader.max_y << std::endl;
+
+	
+
 	std::vector<Point3D> points;
 	Point3D tempPt;
+	while (lasReader->read_point())
+	{
+		tempPt.x = lasReader->point.get_x();
+		tempPt.y = lasReader->point.get_y();
+		tempPt.z = lasReader->point.get_z();
+		points.push_back(tempPt);
+	}
+
+
 
 	//Reading points from ASCII formated file;
-	FILE* inFile = fopen("test-02.xyz", "r");
-	if (inFile)
-	{
-		while (!feof(inFile))
-		{
-			fscanf(inFile, "%lf %lf %lf\n",
-				&tempPt.x, &tempPt.y, &tempPt.z);
-			points.push_back(tempPt);
-		}
-		fclose(inFile);
-	}
-	else
-	{
-		std::cout << "There was an error in data loading..." << std::endl;
-		return; 
-	} 
+	//FILE* inFile = fopen("test-02.xyz", "r");
+	//if (inFile)
+	//{
+	//	while (!feof(inFile))
+	//	{
+	//		fscanf(inFile, "%lf %lf %lf\n",
+	//			&tempPt.x, &tempPt.y, &tempPt.z);
+	//		points.push_back(tempPt);
+	//	}
+	//	fclose(inFile);
+	//}
+	//else
+	//{
+	//	std::cout << "There was an error in data loading..." << std::endl;
+	//	return; 
+	//} 
 
 	
 	//Parameters
-	const double radius = 1.0; 
-	const double verticalResolution = 0.7; 
-	const int miniPtsPerCluster = 3;
+	const double radius = 0.3; 
+	const double verticalResolution = 0.3; 
+	const int miniPtsPerCluster = 4;
 
 	//Initialization
 	FoxTree* foxTree = new FoxTree(points, radius, verticalResolution, miniPtsPerCluster);
 
 	//Topdown direction
 	foxTree->separateTrees(1, 1);
+
+	// 测试语句
+	std::cout << "成功输出。。。。" << std::endl;
+
 	//Output separation results
-	foxTree->outputTrees("test-02-1.0-0.7-3.xyz", foxTree->m_nTrees); 
+	foxTree->outputTrees("../Result/440882004002000103501-off-ground-1.xyz", foxTree->m_nTrees); 
 	std::cout << "Finished" << std::endl;
 
 	if (foxTree) delete foxTree; foxTree = nullptr;

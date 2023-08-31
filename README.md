@@ -69,7 +69,15 @@ The individual tree delineation results are given as the figures below:
 ![Individual tree delineation results](Results/test-04-results-1.0-0.8-5.png)
 
 ## Declarations
-In this implementation,  **nanoflann** is employed for **_KNN_** searching, which can be found from here [link](https://github.com/jlblancoc/nanoflann). 
+In this implementation
+
+1. **nanoflann** is employed for **_KNN_** searching, which can be found from here [link](https://github.com/jlblancoc/nanoflann). 
+
+2. **LASlib** is employed for **_LAS_** file reading, which can be found from here [link](https://lastools.github.io/).
+
+## Chenges Notes
+- Fixed some bugs that caused abnormal crashes.
+- Added a new function to load the data from a LAS file.
 
 ## Support & Contact
 
@@ -97,4 +105,10 @@ http://doris.tudelft.nl/~rlindenbergh/
 Dec. 9, 2018
 
 Copyright (C) 2018
+
+or
+
+**Zhou Yang**
+yangzhou@aircas.ac.cn
+
 
