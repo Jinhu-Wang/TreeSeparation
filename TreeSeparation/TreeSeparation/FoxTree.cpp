@@ -39,6 +39,7 @@ FoxTree::FoxTree(std::vector<Point3D> points, double radius, double verticalReso
 	this->m_nVerticalResolution = verticalResolution;
 	this->m_nRadius = radius;
 	this->m_nMinPtSeeds = minPtNum;
+	this->m_nTreeIndex = 0;
 
 	this->m_nNumPts = points.size();
 	this->m_Points = new Point3D[points.size()];
@@ -58,9 +59,6 @@ FoxTree::FoxTree(std::vector<Point3D> points, double radius, double verticalReso
 		if (points.at(i).z < this->m_nBBX.zMin) this->m_nBBX.zMin = points.at(i).z;
 	}
 }
-
-
-
 
 
 //Default descructor;
@@ -160,13 +158,29 @@ void FoxTree::separateTrees(int ptOrVoxel, int direction)
 //Tree individulization from top layer downwards;
 void FoxTree::topDownSeparation(double radius, double verticalResolution)
 {
-	bool isTopLayer = true;
-	int k = 0;
+	// Start top-down separation
+	std::cout << "=============================================" << std::endl;
+	std::cout << "Start Tree individulization from top layer downwards" << std::endl;
 
-	for (float height = this->m_nBBX.zMax; height >= this->m_nBBX.zMin; height -= verticalResolution)
+	bool isTopLayer = true;
+
+	std::cout << "The height of tree is: " << this->m_nBBX.zMax << "->" << this->m_nBBX.zMin << std::endl;
+	int layerNum = (this->m_nBBX.zMax - this->m_nBBX.zMin) / verticalResolution + 1;
+	std::cout << "The total number of layer is: " << layerNum << std::endl;
+
+	for (int i = 0; i < layerNum; i++)
 	{
+		float heightUp = this->m_nBBX.zMax - verticalResolution * i;
+		if (heightUp < this->m_nBBX.zMin) break;
+
+		float heightDown = this->m_nBBX.zMax - verticalResolution * (i + 1);
+		if (heightDown < this->m_nBBX.zMin)
+		{
+			float heightDown = this->m_nBBX.zMin;
+		}
+
 		clock_t startTime = clock();
-		std::vector<int> ptIDs = this->getPts(height - verticalResolution, height);
+		std::vector<int> ptIDs = this->getPts(heightDown, heightUp);
 		if (ptIDs.empty()) continue;
 
 		std::vector<std::vector<int>> currLayerClusters;
@@ -175,7 +189,7 @@ void FoxTree::topDownSeparation(double radius, double verticalResolution)
 
 		if (isTopLayer)
 		{
-			currLayerClusters = this->clusterPoints(radius, ptIDs);
+			currLayerClusters = this->clusterPoints(radius, ptIDs);	// layer cluster
 			this->generateTreeClusters(currLayerClusters);
 			this->ConcatenateToParsedPts(currLayerClusters);
 			if(currLayerClusters.size() == 0)
@@ -213,8 +227,8 @@ void FoxTree::topDownSeparation(double radius, double verticalResolution)
 		}
 		clock_t endTime = clock();
 
-		std::cout << "Processing time for height: [" << height << " <=> " << height + verticalResolution << "] is: " << (endTime - startTime) / 1000 << " seconds." << std::endl;
-		std::cout << "Height index: " << k++ << std::endl;
+		std::cout << "Processing time for height: [" << heightDown << " <=> " << heightUp << "] is: " << (endTime - startTime) / 1000 << " seconds." << std::endl;
+		std::cout << "Height index: " << i+1 << std::endl;
 		std::cout << "=============================================" << std::endl;
 	}
 }
@@ -282,6 +296,11 @@ void FoxTree::bottomUpSeparation(double radius, double verticalResolution)
 
  
 //Cluster points that are within the distance of the given radius.
+/* ================================================================
+   info:   对当前层的点依据半径阈值进行欧式聚类，使用KDTree；
+   input:  半径阈值， 该层点的索引
+   output: 剧烈簇（二维数组）
+==================================================================*/
 std::vector<std::vector<int>> FoxTree::clusterPoints(double radius, std::vector<int> ptIndices)
 {
 	std::vector<std::vector<int>> Clusters;
@@ -410,6 +429,10 @@ std::vector<int> FoxTree::assignPtsToTrees(std::vector<int> newPtIDs, double rad
 
 
 //Generate tree clusters based on the point indices;
+/* ================================================================
+   info:   根据聚类的结果生成树的聚类簇
+   input:  聚类簇索引(二维数组）
+==================================================================*/
 void FoxTree::generateTreeClusters(std::vector<std::vector<int>> ptClusters)
 {
 	if (ptClusters.empty()) return;
@@ -428,11 +451,6 @@ void FoxTree::generateTreeClusters(std::vector<std::vector<int>> ptClusters)
 		this->applyTreeIndexToPts(tree);
 	}
 } 
-
-
-
-
-
 
 
 //Apply the tree indices from the given point clusters;
@@ -490,6 +508,7 @@ void FoxTree::outputTrees(std::string filename, std::map<int, TreeCluster> trees
 		g = rand() % 255;
 		b = rand() % 255;
 
+		// TODO: have bug
 		for (int j = 0; j < trees.at(i).ptIDs.size(); ++j)
 		{
 			int id = trees.at(i).ptIDs.at(j);
