@@ -194,11 +194,14 @@ void FoxTree::topDownSeparation(double radius, double verticalResolution)
 			std::cout << "Incrementally assign points..." << std::endl;
 
 			std::vector<int> pointIndices = ptIDs;
-			do
+			if(!this->m_nParsedPtIds.empty())
 			{
-				parsedPts = this->m_nParsedPtIds.size();
-				restPts = this->assignPtsToTrees(restPts, radius);
-			} while (parsedPts != this->m_nParsedPtIds.size());
+				do
+				{
+					parsedPts = this->m_nParsedPtIds.size();
+					restPts = this->assignPtsToTrees(restPts, radius);
+				} while (parsedPts != this->m_nParsedPtIds.size());
+			}
 
 			std::cout << "Finished assigning points" << std::endl;
 
@@ -254,11 +257,15 @@ void FoxTree::bottomUpSeparation(double radius, double verticalResolution)
 			std::vector<int> restPts = ptIDs;
 			int parsedPts = 0;
 			std::cout << "Incrementally assign points..." << std::endl;
-			do
+			if(!this->m_ParsedPtIds.empty())
 			{
-				parsedPts = this->m_nParsedPtIds.size();
-				restPts = this->assignPtsToTrees(restPts, radius);
-			} while (parsedPts != this->m_nParsedPtIds.size());
+				do
+				{
+					parsedPts = this->m_nParsedPtIds.size();
+					restPts = this->assignPtsToTrees(restPts, radius);
+				} while (parsedPts != this->m_nParsedPtIds.size());
+			}
+			
 			std::cout << "Finished assigning points" << std::endl;
 			
 			std::vector<std::vector<int>> currLayerClusters;
