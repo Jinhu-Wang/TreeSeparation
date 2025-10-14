@@ -94,7 +94,4 @@ r.c.lindenbergh (at) tudelft.nl.
 
 http://doris.tudelft.nl/~rlindenbergh/
 
-Dec. 9, 2018
-
-Copyright (C) 2018
 
