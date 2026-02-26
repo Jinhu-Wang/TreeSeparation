@@ -17,7 +17,7 @@
 
 This module implements a lightweight and easy-to-use point-based method for individual tree delineation from 3D point cloud data obtained by airborne laser scanning. The repository provides three equivalent implementations of the algorithm to suit different workflows and performance needs:
 
-1. **C/C++ Version:** A pure C++ implementation consisting of a project generated from Visual Studio 2015. The core class for tree separation is named `FoxTree` and can be found in the respective `FoxTree.h` and `FoxTree.cpp` files.
+1. **C++ Version:** A pure C++ implementation consisting of a project generated from Visual Studio 2015. The core class for tree separation is named `FoxTree` and can be found in the respective `FoxTree.h` and `FoxTree.cpp` files.
 2. **Python Sequential Version:** A modern Python re-implementation utilizing `scipy.spatial.cKDTree` for rapid nearest-neighbor and radius searches, processing files one by one with detailed execution time tracking.
 3. **Python Parallel Version:** An optimized Python version designed for batch processing. It utilizes multi-core processing to run the separation algorithm on multiple `.xyz` files simultaneously, drastically reducing the total execution time for large datasets.
 
