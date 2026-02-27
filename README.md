@@ -40,6 +40,8 @@ This repository is organized as follows:
 
 ## Prerequisites
 
+(Choose either version/option)
+
 For the **C++ version**, a standard C++ compiler (e.g., MSVC via Visual Studio 2015 or later) is required.
 
 For the **Python versions**, you will need Python 3.x and the following packages:
