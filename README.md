@@ -6,6 +6,7 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [File Structure](#file-structure)
 - [Prerequisites](#prerequisites)
 - [Input Data](#input-data)
 - [Parameter Settings](#parameter-settings)
@@ -20,6 +21,21 @@ This module implements a lightweight and easy-to-use point-based method for indi
 1. **C++ Version:** A pure C++ implementation consisting of a project generated from Visual Studio 2015. The core class for tree separation is named `FoxTree` and can be found in the respective `FoxTree.h` and `FoxTree.cpp` files.
 2. **Python Sequential Version:** A modern Python re-implementation utilizing `scipy.spatial.cKDTree` for rapid nearest-neighbor and radius searches, processing files one by one with detailed execution time tracking.
 3. **Python Parallel Version:** An optimized Python version designed for batch processing. It utilizes multi-core processing to run the separation algorithm on multiple `.xyz` files simultaneously, drastically reducing the total execution time for large datasets.
+
+## File structure
+This repository is organized as follows:
+
+```text
+.
+├── Results/                 # Directory for output formatting and results
+├── TestDatasets/            # Sample 3D LiDAR point cloud datasets
+├── TreeSeparation/          # Main source code directory (Visual Studio 2015 project, FoxTree.h, FoxTree.cpp, etc.)
+├── tree_ind.py              # Python implementation of tree individualization - Sequential version
+├── script_name_2.py         # Python implementation of tree individualization - Parallelized version
+├── .gitignore               # Git ignore rules
+├── LICENSE                  # LGPL-3.0 License
+└── README.md                # Project documentation
+```
 
 ## Prerequisites
 
