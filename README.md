@@ -32,6 +32,7 @@ This repository is organized as follows:
 ├── TreeSeparation/          # Main source code directory (Visual Studio 2015 project, FoxTree.h, FoxTree.cpp, etc.)
 ├── tree_ind.py              # Python implementation of tree individualization - Sequential version
 ├── script_name_2.py         # Python implementation of tree individualization - Parallelized version
+├── compare_efficiency.py    # Compares the execution time of Sequential vs. Parallel Python implementations. 
 ├── .gitignore               # Git ignore rules
 ├── LICENSE                  # LGPL-3.0 License
 └── README.md                # Project documentation
