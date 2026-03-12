@@ -102,7 +102,7 @@ class FoxTree:
         """
         Orchestrates the parallel layer-wise clustering followed by sequential linking.
         """
-        print(f"  [Algorithm] Starting Parallel Separation on {multiprocessing.cpu_count()} cores...")
+        print(f"  [Algorithm] Starting Parallel Separation on {multiprocessing.cpu_count()*0.8} cores...")
         
         # 1. SLICING
         # --------------------------------
