@@ -352,7 +352,7 @@ if __name__ == "__main__":
     multiprocessing.freeze_support() 
     
     # --- USER PARAMETERS ---
-    INPUT_DIR_NAME = "0_Test_Datasets"
+    INPUT_DIR_NAME = "TestDatasets"
     OUTPUT_DIR_NAME = "1_Individualized_trees_parallelized"
     
     RADIUS = 1.0
