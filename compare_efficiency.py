@@ -172,8 +172,8 @@ if __name__ == "__main__":
     # =========================================================
     
     # Names of the scripts to compare
-    SCRIPT_SEQ = "tree_ind_v4.py"
-    SCRIPT_PAR = "tree_ind_parallelized_v4.py"
+    SCRIPT_SEQ = "tree_ind.py"
+    SCRIPT_PAR = "tree_ind_parallelized.py"
 
     # Output filenames
     OUTPUT_REPORT_FILE = "efficiency_report.txt"
