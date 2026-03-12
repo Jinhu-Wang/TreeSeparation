@@ -315,7 +315,7 @@ if __name__ == "__main__":
     # =========================================================
     
     # Directory settings
-    INPUT_DIR_NAME = "0_Test_Datasets"
+    INPUT_DIR_NAME = "TestDatasets"
     OUTPUT_DIR_NAME = "1_Individualized_trees"
     
     # Algorithm parameters
